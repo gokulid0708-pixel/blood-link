@@ -61,18 +61,14 @@ async function startServer() {
   // Run Donor Activity AI check on startup (Rule 8, 9)
   await runDonorActivityCheck();
 
-  if (!process.env.VERCEL) {
-    app.listen(PORT, () => {
-      console.log(`=======================================================`);
-      console.log(`🩸 BLOODLINK AI V2.0 - PRIVACY-FIRST NETWORK ONLINE 🩸`);
-      console.log(`Command Center API listening on http://localhost:${PORT}`);
-      console.log(`=======================================================`);
-    });
-  }
+  app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`🩸 BLOODLINK AI V2.0 - PRIVACY-FIRST NETWORK ONLINE 🩸`);
+    console.log(`Command Center API listening on http://localhost:${PORT}`);
+    console.log(`=======================================================`);
+  });
 }
 
-if (!process.env.VERCEL) {
-  startServer();
-}
+startServer();
 
 module.exports = app;
