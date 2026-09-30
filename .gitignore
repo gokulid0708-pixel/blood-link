@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build outputs
+dist/
+client/dist/
+
+# Secret Environment files (keep .env.example, ignore .env)
+.env
+.env.local
+.env.*.local
+client/.env
+server/.env
+
+# Local Database & Cache
+server/data/*.json
+!server/data/.gitkeep
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

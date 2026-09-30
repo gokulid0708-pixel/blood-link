@@ -1,0 +1,16 @@
+{
+  "name": "saving-lives-bloodlink-ai",
+  "version": "2.0.0",
+  "description": "Real-Time Emergency Blood Availability & Intelligent Donor Response Platform",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "start": "node scripts/dev.js",
+    "refresh": "cd server && npm run seed",
+    "server": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build:client": "cd client && npm run build"
+  }
+}

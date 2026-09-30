@@ -1,0 +1,22 @@
+{
+  "name": "saving-lives-server",
+  "version": "1.0.0",
+  "description": "Real-Time Emergency Blood Availability & Intelligent Donor Response Platform Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch-path=server.js --watch-path=routes --watch-path=controllers --watch-path=models --watch-path=services --watch-path=config server.js",
+    "seed": "node seed/seedData.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^6.9.16",
+    "uuid": "^11.0.5"
+  }
+}

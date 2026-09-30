@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-red: #D62839;
+  --bg-color: #0B1220;
+  --card-bg: #111827;
+  --card-border: rgba(55, 65, 81, 0.6);
+  --text-main: #FFFFFF;
+  --text-muted: #94A3B8;
+  --nav-bg: #0B101D;
+}
+
+html.light {
+  --bg-color: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --card-border: #E2E8F0;
+  --text-main: #1F2937;
+  --text-muted: #64748B;
+  --nav-bg: #FFFFFF;
+}
+
+html.dark {
+  --bg-color: #0B1220;
+  --card-bg: #111827;
+  --card-border: rgba(55, 65, 81, 0.6);
+  --text-main: #FFFFFF;
+  --text-muted: #94A3B8;
+  --nav-bg: #0B101D;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, .font-hud {
+  font-family: 'Rajdhani', 'Chakra Petch', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Glassmorphism Tactical Panels & Card Theme Styles */
+.hud-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+html.light .hud-panel {
+  background: #FFFFFF;
+  border-color: #E2E8F0;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.05);
+}
+
+html.dark .hud-panel {
+  background: #111827;
+  border-color: rgba(55, 65, 81, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hud-panel-red {
+  background: rgba(214, 40, 57, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(214, 40, 57, 0.3);
+  box-shadow: 0 0 25px rgba(214, 40, 57, 0.12);
+}
+
+/* Light mode overrides for text readability */
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-white {
+  color: #1F2937;
+}
+
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: #64748B;
+}
+
+html.light .bg-slate-950,
+html.light .bg-slate-900 {
+  background-color: #F1F5F9;
+}
+
+html.light .border-slate-800,
+html.light .border-slate-900 {
+  border-color: #E2E8F0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #64748B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Leaflet dark map filter */
+html.dark .leaflet-layer,
+html.dark .leaflet-control-zoom-in,
+html.dark .leaflet-control-zoom-out,
+html.dark .leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+html.dark .leaflet-container {
+  background: #0B1220 !important;
+}
+
+html.light .leaflet-container {
+  background: #F8FAFC !important;
+}
