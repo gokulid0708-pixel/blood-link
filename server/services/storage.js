@@ -1,14 +1,20 @@
-// Dual-Mode Unified Storage Engine (MongoDB Atlas + Fallback JSON Local Store)
+// Dual-Mode Unified Storage Engine (MongoDB Atlas + Resilient Serverless JSON Store)
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const mongoose = require('mongoose');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.NODE_ENV === 'production');
+const DATA_DIR = isServerless ? path.join(os.tmpdir(), 'bloodlink-data') : path.join(__dirname, '..', 'data');
 const DATA_FILE = path.join(DATA_DIR, 'store.json');
 
-// Ensure data folder exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+// Ensure data folder exists safely
+try {
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+} catch (e) {
+  // Read-only environment, memory store will be utilized
 }
 
 // In-memory cache synced with JSON store
@@ -24,23 +30,33 @@ let store = {
   auditlogs: []
 };
 
+const BUNDLED_DATA_FILE = path.join(__dirname, '..', 'data', 'store.json');
+
 // Load initial store if exists
 function loadLocalStore() {
   try {
     if (fs.existsSync(DATA_FILE)) {
       const raw = fs.readFileSync(DATA_FILE, 'utf8');
       store = JSON.parse(raw);
+    } else if (fs.existsSync(BUNDLED_DATA_FILE)) {
+      const raw = fs.readFileSync(BUNDLED_DATA_FILE, 'utf8');
+      store = JSON.parse(raw);
+      // Attempt copy into writable directory
+      saveLocalStore();
     }
   } catch (err) {
-    console.error('Error reading local JSON store:', err.message);
+    // Memory store fallback
   }
 }
 
 function saveLocalStore() {
   try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
     fs.writeFileSync(DATA_FILE, JSON.stringify(store, null, 2), 'utf8');
   } catch (err) {
-    console.error('Error saving local JSON store:', err.message);
+    // Keep in-memory if disk is unavailable
   }
 }
 

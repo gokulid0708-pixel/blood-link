@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const storage = require('../services/storage');
 const { JWT_SECRET } = require('../middleware/authMiddleware');
 const { generateOTP, sendOtpEmail, verifyOTP } = require('../services/otpService');
+const supabase = require('../config/supabase');
 
 // Donor Registration
 async function registerDonor(req, res) {
@@ -99,9 +100,23 @@ async function registerDonor(req, res) {
       },
       otpPreview: process.env.NODE_ENV !== 'production' ? otp : undefined
     });
+
+    // Mirror newly registered account to Supabase Auth admin
+    if (supabase) {
+      try {
+        await supabase.auth.admin.createUser({
+          email: email.toLowerCase(),
+          password,
+          email_confirm: true,
+          user_metadata: { name, role: 'donor', phone }
+        });
+      } catch (sbErr) {
+        // Proceed if user already exists
+      }
+    }
   } catch (err) {
     console.error('Registration error:', err);
-    res.status(500).json({ success: false, message: 'Server error registering donor' });
+    res.status(500).json({ success: false, message: err.message || 'Server error registering donor' });
   }
 }
 
@@ -180,7 +195,7 @@ async function registerHospital(req, res) {
     });
   } catch (err) {
     console.error('Hospital registration error:', err);
-    res.status(500).json({ success: false, message: 'Server error registering hospital' });
+    res.status(500).json({ success: false, message: err.message || 'Server error registering hospital' });
   }
 }
 
@@ -268,7 +283,7 @@ async function registerBloodBank(req, res) {
     });
   } catch (err) {
     console.error('Blood Bank registration error:', err);
-    res.status(500).json({ success: false, message: 'Server error registering blood bank' });
+    res.status(500).json({ success: false, message: err.message || 'Server error registering blood bank' });
   }
 }
 

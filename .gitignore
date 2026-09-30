@@ -14,9 +14,7 @@ client/dist/
 client/.env
 server/.env
 
-# Local Database & Cache
-server/data/*.json
-!server/data/.gitkeep
+# Local Cache & Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

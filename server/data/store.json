@@ -1,0 +1,884 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_01",
+      "name": "Dr. Vikram Sarabhai",
+      "email": "admin@savinglives.org",
+      "password": "$2a$10$asj7LTbBbL1GQD0ax0Dax.smLBLQPXiwjOBu.R.5bIQhrWJzqTJwa",
+      "role": "admin",
+      "phone": "+91 98421 00001",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_hosp_01",
+      "name": "PSG Institute of Medical Sciences & Research",
+      "email": "hospital@psgims.org",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "hospital",
+      "phone": "+91 422 257 0170",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_hosp_02",
+      "name": "Kovai Medical Center and Hospital (KMCH)",
+      "email": "kmch@hospitals.in",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "hospital",
+      "phone": "+91 422 432 3800",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_bb_01",
+      "name": "PSG Central Blood Bank & Component Lab",
+      "email": "bloodbank@psgims.org",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "bloodbank",
+      "phone": "+91 422 257 0171",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_bb_02",
+      "name": "Rotary Metro Blood Bank",
+      "email": "bloodbank@rotary.org",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "bloodbank",
+      "phone": "+91 422 222 3456",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_donor_01",
+      "name": "Karthik Subramanian",
+      "email": "donor@savinglives.org",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "donor",
+      "phone": "+91 98940 12345",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_donor_02",
+      "name": "Ananya Ramesh",
+      "email": "ananya.r@gmail.com",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "donor",
+      "phone": "+91 97890 23456",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_donor_03",
+      "name": "Mohammed Rizwan",
+      "email": "rizwan.m@outlook.com",
+      "password": "$2a$10$s.3.tckZDDAjWQ1uiD4Nie1C0FUUjOYWZ.X8bALlrI3rMC0UObEVi",
+      "role": "donor",
+      "phone": "+91 99440 34567",
+      "isVerified": true,
+      "status": "active"
+    },
+    {
+      "_id": "usr_1790752834823",
+      "email": "gokulid08@gmail.com",
+      "password": "$2a$10$MdKclpGXh4dMOSgtjXhY7O0lWFtxXAsvdr/3rhcNA0YAdJ6JEcqEy",
+      "role": "donor",
+      "name": "GOKUL M",
+      "phone": "8122365096",
+      "isVerified": false,
+      "status": "active",
+      "id": "usr_1790752834823",
+      "createdAt": "2026-09-30T07:20:34.823Z"
+    },
+    {
+      "_id": "usr_1790752912667",
+      "email": "gokul_new_test@gmail.com",
+      "password": "$2a$10$JETA82zwR5BW50pRrOgisOcFXUMApkxAWXIqOPGZOpe7btxboUfV.",
+      "role": "donor",
+      "name": "Gokul Test",
+      "phone": "8122365096",
+      "isVerified": false,
+      "status": "active",
+      "id": "usr_1790752912667",
+      "createdAt": "2026-09-30T07:21:52.667Z"
+    }
+  ],
+  "donors": [
+    {
+      "_id": "donor_01",
+      "userId": "usr_donor_01",
+      "name": "Karthik Subramanian",
+      "email": "donor@savinglives.org",
+      "phone": "+91 98940 12345",
+      "dob": "1996-05-14",
+      "bloodGroup": "O+",
+      "currentLocation": {
+        "lat": 11.0245,
+        "lng": 77.0012,
+        "address": "Peelamedu, Coimbatore"
+      },
+      "aadhaarNumber": "XXXX-XXXX-4819",
+      "aadhaarStatus": "verified",
+      "emergencyContact": {
+        "name": "Meena Subramanian",
+        "phone": "+91 98940 54321",
+        "relation": "Spouse"
+      },
+      "lastDonationDate": "2026-06-27T03:43:11.308Z",
+      "lastActiveDate": "2026-09-30T03:43:11.309Z",
+      "availability": "Available Now",
+      "trustScore": 98,
+      "engagementScore": 98,
+      "livesSaved": 8,
+      "donationsCount": 6,
+      "badges": [
+        "First Donation",
+        "Life Saver",
+        "Hero Donor"
+      ],
+      "activityStatus": "active",
+      "searchVisibility": true,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_02",
+      "userId": "usr_donor_02",
+      "name": "Ananya Ramesh",
+      "email": "ananya.r@gmail.com",
+      "phone": "+91 97890 23456",
+      "dob": "1998-11-20",
+      "bloodGroup": "O-",
+      "currentLocation": {
+        "lat": 11.0182,
+        "lng": 76.9945,
+        "address": "Sowripalayam, Coimbatore"
+      },
+      "aadhaarNumber": "XXXX-XXXX-9124",
+      "aadhaarStatus": "verified",
+      "emergencyContact": {
+        "name": "Ramesh K",
+        "phone": "+91 97890 98765",
+        "relation": "Father"
+      },
+      "lastDonationDate": "2026-06-12T03:43:11.309Z",
+      "lastActiveDate": "2026-09-30T03:43:11.309Z",
+      "availability": "Available Now",
+      "trustScore": 96,
+      "engagementScore": 96,
+      "livesSaved": 11,
+      "donationsCount": 8,
+      "badges": [
+        "First Donation",
+        "Life Saver",
+        "Hero Donor",
+        "Platinum Donor"
+      ],
+      "activityStatus": "active",
+      "searchVisibility": true,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_03",
+      "userId": "usr_donor_03",
+      "name": "Mohammed Rizwan",
+      "email": "rizwan.m@outlook.com",
+      "phone": "+91 99440 34567",
+      "dob": "1994-03-12",
+      "bloodGroup": "A+",
+      "currentLocation": {
+        "lat": 11.0315,
+        "lng": 77.0188,
+        "address": "Civil Aerodrome, Coimbatore"
+      },
+      "aadhaarNumber": "XXXX-XXXX-6623",
+      "aadhaarStatus": "verified",
+      "lastDonationDate": "2026-06-02T03:43:11.309Z",
+      "lastActiveDate": "2026-09-30T03:43:11.309Z",
+      "availability": "Available Today",
+      "trustScore": 92,
+      "engagementScore": 92,
+      "livesSaved": 4,
+      "donationsCount": 3,
+      "badges": [
+        "First Donation",
+        "Life Saver"
+      ],
+      "activityStatus": "active",
+      "searchVisibility": true,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_04",
+      "name": "Dr. Priya Sundaram",
+      "email": "drpriya.s@hospital.org",
+      "phone": "+91 98432 45678",
+      "dob": "1992-08-04",
+      "bloodGroup": "B+",
+      "currentLocation": {
+        "lat": 11.0112,
+        "lng": 76.9723,
+        "address": "Race Course, Coimbatore"
+      },
+      "availability": "Available Now",
+      "trustScore": 99,
+      "livesSaved": 15,
+      "donationsCount": 11,
+      "badges": [
+        "First Donation",
+        "Life Saver",
+        "Hero Donor",
+        "Platinum Donor"
+      ],
+      "activityStatus": "active",
+      "searchVisibility": true,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_05",
+      "name": "Suresh Kumar",
+      "email": "suresh.k@logistics.co",
+      "phone": "+91 98941 90123",
+      "dob": "1993-10-09",
+      "bloodGroup": "AB-",
+      "currentLocation": {
+        "lat": 10.995,
+        "lng": 76.974,
+        "address": "Ramanathapuram, Coimbatore"
+      },
+      "availability": "Available Now",
+      "trustScore": 95,
+      "livesSaved": 8,
+      "donationsCount": 5,
+      "badges": [
+        "First Donation",
+        "Life Saver",
+        "Hero Donor"
+      ],
+      "activityStatus": "active",
+      "searchVisibility": true,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_inactive_01",
+      "name": "Ranganathan V. (Flagged Inactive)",
+      "email": "ranganathan.v@oldmail.com",
+      "phone": "+91 94421 99999",
+      "dob": "1985-02-14",
+      "bloodGroup": "O+",
+      "currentLocation": {
+        "lat": 11.015,
+        "lng": 76.96,
+        "address": "Coimbatore West"
+      },
+      "availability": "Unavailable",
+      "trustScore": 70,
+      "livesSaved": 2,
+      "donationsCount": 2,
+      "badges": [
+        "First Donation"
+      ],
+      "lastActiveDate": "2025-08-16T03:43:11.309Z",
+      "activityStatus": "inactive",
+      "searchVisibility": false,
+      "isVerified": true
+    },
+    {
+      "_id": "donor_1790752834823",
+      "userId": "usr_1790752834823",
+      "name": "GOKUL M",
+      "email": "gokulid08@gmail.com",
+      "phone": "8122365096",
+      "dob": "2008-01-12",
+      "bloodGroup": "O+",
+      "currentLocation": {
+        "lat": 11.027839344050316,
+        "lng": 76.99772685610847,
+        "address": "Coimbatore Central"
+      },
+      "workingLocation": {
+        "lat": 11.027839344050316,
+        "lng": 76.99772685610847,
+        "address": "Coimbatore Hub"
+      },
+      "aadhaarNumber": "XXXX-XXXX-9999",
+      "aadhaarStatus": "verified",
+      "emergencyContact": {
+        "name": "Emergency Contact",
+        "phone": "8122365096",
+        "relation": "Family"
+      },
+      "lastDonationDate": "2026-05-20T00:00:00.000Z",
+      "availability": "Available Now",
+      "trustScore": 95,
+      "livesSaved": 0,
+      "donationsCount": 0,
+      "badges": [
+        "First Donation"
+      ],
+      "isVerified": true,
+      "id": "donor_1790752834823",
+      "createdAt": "2026-09-30T07:20:34.825Z"
+    },
+    {
+      "_id": "donor_1790752912667",
+      "userId": "usr_1790752912667",
+      "name": "Gokul Test",
+      "email": "gokul_new_test@gmail.com",
+      "phone": "8122365096",
+      "dob": "2008-01-12",
+      "bloodGroup": "O+",
+      "currentLocation": {
+        "lat": 11.012338845767733,
+        "lng": 77.00254988202933,
+        "address": "Coimbatore Central"
+      },
+      "workingLocation": "Gandhipuram, Coimbatore",
+      "aadhaarNumber": "617779002034",
+      "aadhaarStatus": "verified",
+      "emergencyContact": {
+        "name": "parameshwari",
+        "phone": "+91 98421 88765"
+      },
+      "lastDonationDate": "2026-06-22T07:21:52.669Z",
+      "availability": "Available Now",
+      "trustScore": 95,
+      "livesSaved": 0,
+      "donationsCount": 0,
+      "badges": [
+        "First Donation"
+      ],
+      "isVerified": true,
+      "id": "donor_1790752912667",
+      "createdAt": "2026-09-30T07:21:52.669Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "_id": "hosp_01",
+      "userId": "usr_hosp_01",
+      "name": "PSG Institute of Medical Sciences & Research",
+      "email": "hospital@psgims.org",
+      "licenseNumber": "TN-CBE-MED-2021-9981",
+      "address": "Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004",
+      "emergencyContact": "+91 422 257 0170",
+      "type": "Tertiary Care & Level 1 Trauma Center",
+      "location": {
+        "lat": 11.0264,
+        "lng": 77.0028,
+        "address": "Peelamedu, Coimbatore"
+      },
+      "verificationStatus": "verified"
+    },
+    {
+      "_id": "hosp_02",
+      "userId": "usr_hosp_02",
+      "name": "Kovai Medical Center and Hospital (KMCH)",
+      "email": "kmch@hospitals.in",
+      "licenseNumber": "TN-CBE-MED-2019-4412",
+      "address": "99, Avinashi Rd, Civil Aerodrome Post, Coimbatore 641014",
+      "emergencyContact": "+91 422 432 3800",
+      "type": "Multi-Speciality Emergency Center",
+      "location": {
+        "lat": 11.0422,
+        "lng": 77.0392,
+        "address": "Avinashi Rd, Coimbatore"
+      },
+      "verificationStatus": "verified"
+    },
+    {
+      "_id": "hosp_03",
+      "userId": "usr_hosp_03",
+      "name": "Coimbatore Medical College Hospital (CMCH)",
+      "email": "cmch@tn.gov.in",
+      "licenseNumber": "TN-GOV-CMCH-1909",
+      "address": "Trichy Rd, Gopalapuram, Coimbatore 641018",
+      "emergencyContact": "+91 422 230 1393",
+      "type": "Government Medical College & Emergency Unit",
+      "location": {
+        "lat": 10.9998,
+        "lng": 76.9698,
+        "address": "Trichy Rd, Coimbatore"
+      },
+      "verificationStatus": "verified"
+    },
+    {
+      "_id": "hosp_04",
+      "userId": "usr_hosp_04",
+      "name": "Ganga Medical Centre & Hospitals",
+      "email": "emergency@gangahospital.com",
+      "licenseNumber": "TN-CBE-ORTHO-3321",
+      "address": "313, Mettupalayam Rd, Coimbatore 641043",
+      "emergencyContact": "+91 422 248 5000",
+      "type": "Orthopaedic & Trauma Center",
+      "location": {
+        "lat": 11.021,
+        "lng": 76.9535,
+        "address": "Mettupalayam Rd, Coimbatore"
+      },
+      "verificationStatus": "verified"
+    }
+  ],
+  "bloodbanks": [
+    {
+      "_id": "bb_01",
+      "userId": "usr_bb_01",
+      "name": "PSG Central Blood Bank & Component Lab",
+      "email": "bloodbank@psgims.org",
+      "licenseNumber": "TN/BLD/2020/094",
+      "address": "PSG Hospital Campus, Peelamedu, Coimbatore 641004",
+      "storageCapacity": 2500,
+      "verificationStatus": "verified",
+      "location": {
+        "lat": 11.027,
+        "lng": 77.0035,
+        "address": "Peelamedu, Coimbatore"
+      },
+      "inventory": [
+        {
+          "bloodGroup": "A+",
+          "availableUnits": 32,
+          "reservedUnits": 5,
+          "minThreshold": 10
+        },
+        {
+          "bloodGroup": "A-",
+          "availableUnits": 8,
+          "reservedUnits": 2,
+          "minThreshold": 6
+        },
+        {
+          "bloodGroup": "B+",
+          "availableUnits": 45,
+          "reservedUnits": 8,
+          "minThreshold": 12
+        },
+        {
+          "bloodGroup": "B-",
+          "availableUnits": 4,
+          "reservedUnits": 1,
+          "minThreshold": 6
+        },
+        {
+          "bloodGroup": "AB+",
+          "availableUnits": 19,
+          "reservedUnits": 3,
+          "minThreshold": 8
+        },
+        {
+          "bloodGroup": "AB-",
+          "availableUnits": 2,
+          "reservedUnits": 0,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "O+",
+          "availableUnits": 54,
+          "reservedUnits": 12,
+          "minThreshold": 15
+        },
+        {
+          "bloodGroup": "O-",
+          "availableUnits": 3,
+          "reservedUnits": 1,
+          "minThreshold": 8
+        }
+      ]
+    },
+    {
+      "_id": "bb_02",
+      "userId": "usr_bb_02",
+      "name": "Rotary Metro Blood Bank",
+      "email": "bloodbank@rotary.org",
+      "licenseNumber": "TN/BLD/2018/142",
+      "address": "Brooke Bond Road, RS Puram, Coimbatore 641002",
+      "storageCapacity": 1800,
+      "verificationStatus": "verified",
+      "location": {
+        "lat": 11.0084,
+        "lng": 76.9558,
+        "address": "RS Puram, Coimbatore"
+      },
+      "inventory": [
+        {
+          "bloodGroup": "A+",
+          "availableUnits": 20,
+          "reservedUnits": 4,
+          "minThreshold": 10
+        },
+        {
+          "bloodGroup": "A-",
+          "availableUnits": 5,
+          "reservedUnits": 1,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "B+",
+          "availableUnits": 28,
+          "reservedUnits": 6,
+          "minThreshold": 10
+        },
+        {
+          "bloodGroup": "B-",
+          "availableUnits": 6,
+          "reservedUnits": 2,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "AB+",
+          "availableUnits": 12,
+          "reservedUnits": 2,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "AB-",
+          "availableUnits": 3,
+          "reservedUnits": 0,
+          "minThreshold": 4
+        },
+        {
+          "bloodGroup": "O+",
+          "availableUnits": 38,
+          "reservedUnits": 7,
+          "minThreshold": 12
+        },
+        {
+          "bloodGroup": "O-",
+          "availableUnits": 5,
+          "reservedUnits": 2,
+          "minThreshold": 8
+        }
+      ]
+    },
+    {
+      "_id": "bb_03",
+      "userId": "usr_bb_03",
+      "name": "Indian Red Cross Society Blood Centre",
+      "email": "redcross.cbe@bloodbank.org",
+      "licenseNumber": "TN/BLD/2015/019",
+      "address": "Huzur Road, Collectorate Campus, Coimbatore 641018",
+      "storageCapacity": 2000,
+      "verificationStatus": "verified",
+      "location": {
+        "lat": 11.0021,
+        "lng": 76.9664,
+        "address": "Collectorate Campus, Coimbatore"
+      },
+      "inventory": [
+        {
+          "bloodGroup": "A+",
+          "availableUnits": 25,
+          "reservedUnits": 2,
+          "minThreshold": 10
+        },
+        {
+          "bloodGroup": "A-",
+          "availableUnits": 7,
+          "reservedUnits": 1,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "B+",
+          "availableUnits": 34,
+          "reservedUnits": 5,
+          "minThreshold": 10
+        },
+        {
+          "bloodGroup": "B-",
+          "availableUnits": 5,
+          "reservedUnits": 1,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "AB+",
+          "availableUnits": 15,
+          "reservedUnits": 2,
+          "minThreshold": 5
+        },
+        {
+          "bloodGroup": "AB-",
+          "availableUnits": 4,
+          "reservedUnits": 0,
+          "minThreshold": 4
+        },
+        {
+          "bloodGroup": "O+",
+          "availableUnits": 42,
+          "reservedUnits": 6,
+          "minThreshold": 12
+        },
+        {
+          "bloodGroup": "O-",
+          "availableUnits": 6,
+          "reservedUnits": 2,
+          "minThreshold": 6
+        }
+      ]
+    }
+  ],
+  "bloodrequests": [
+    {
+      "_id": "req_psg_001",
+      "category": "EMERGENCY",
+      "hospitalId": "hosp_01",
+      "hospitalName": "PSG Institute of Medical Sciences & Research",
+      "hospitalAddress": "Avinashi Road, Peelamedu, Coimbatore",
+      "hospitalPhone": "+91 422 257 0170",
+      "location": {
+        "lat": 11.0264,
+        "lng": 77.0028
+      },
+      "bloodGroup": "O+",
+      "unitsRequired": 3,
+      "unitsSecured": 1,
+      "priorityLevel": "Critical",
+      "requiredTime": "Immediate (< 20 mins)",
+      "caseNotes": "Multiple polytrauma accident patient in Emergency OT 3. Heavy blood loss, urgent whole blood required.",
+      "patientName": "Vignesh M. (Age 34)",
+      "condition": "Polytrauma / Severe Hemorrhage",
+      "status": "Matching",
+      "escalationStage": "Nearby Donors",
+      "matchedDonors": [
+        {
+          "donorId": "donor_01",
+          "donorName": "Karthik Subramanian",
+          "distanceKm": 0.3,
+          "matchScore": 98,
+          "compatibility": 100,
+          "trustScore": 98,
+          "availability": "Available Now",
+          "status": "Notified"
+        },
+        {
+          "donorId": "donor_02",
+          "donorName": "Ananya Ramesh",
+          "distanceKm": 1.3,
+          "matchScore": 93,
+          "compatibility": 95,
+          "trustScore": 96,
+          "availability": "Available Now",
+          "status": "Notified"
+        }
+      ],
+      "timeline": [
+        {
+          "stage": "Emergency OT Raised Request",
+          "message": "Critical O+ blood requisition created for Trauma OT 3",
+          "timestamp": "2026-09-30T03:28:11.309Z"
+        },
+        {
+          "stage": "AI Matching Complete",
+          "message": "Identified top compatible donors within 2 km radius",
+          "timestamp": "2026-09-30T03:29:11.309Z"
+        }
+      ],
+      "createdAt": "2026-09-30T03:28:11.309Z"
+    },
+    {
+      "_id": "req_kmch_002",
+      "category": "EMERGENCY",
+      "hospitalId": "hosp_02",
+      "hospitalName": "Kovai Medical Center and Hospital (KMCH)",
+      "hospitalAddress": "Avinashi Rd, Civil Aerodrome Post, Coimbatore",
+      "hospitalPhone": "+91 422 432 3800",
+      "location": {
+        "lat": 11.0422,
+        "lng": 77.0392
+      },
+      "bloodGroup": "AB-",
+      "unitsRequired": 2,
+      "unitsSecured": 0,
+      "priorityLevel": "Urgent",
+      "requiredTime": "Immediate (< 45 mins)",
+      "caseNotes": "Cardiovascular bypass surgery scheduled. Rare AB negative blood requisition sent to Central Blood Banks.",
+      "patientName": "Sundararajan P. (Age 58)",
+      "condition": "Open Heart Bypass Surgery",
+      "status": "Escalating",
+      "escalationStage": "Blood Banks",
+      "matchedDonors": [
+        {
+          "donorId": "donor_05",
+          "donorName": "Suresh Kumar",
+          "distanceKm": 7.2,
+          "matchScore": 82,
+          "compatibility": 100,
+          "trustScore": 95,
+          "availability": "Available Now",
+          "status": "Notified"
+        }
+      ],
+      "timeline": [
+        {
+          "stage": "Request Created",
+          "message": "Urgent AB- request logged by Cardiac OT",
+          "timestamp": "2026-09-30T03:13:11.309Z"
+        },
+        {
+          "stage": "Blood Banks Activated",
+          "message": "Requisitioning units from PSG Central Blood Bank and Rotary Metro",
+          "timestamp": "2026-09-30T03:38:11.309Z"
+        }
+      ],
+      "createdAt": "2026-09-30T03:13:11.309Z"
+    },
+    {
+      "_id": "req_drive_001",
+      "category": "VOLUNTEER_DRIVE",
+      "hospitalId": "hosp_01",
+      "hospitalName": "PSG Institute of Medical Sciences & Research",
+      "hospitalAddress": "Peelamedu, Coimbatore",
+      "location": {
+        "lat": 11.0264,
+        "lng": 77.0028
+      },
+      "bloodGroup": "O+",
+      "unitsRequired": 50,
+      "unitsSecured": 18,
+      "priorityLevel": "Normal",
+      "requiredTime": "Upcoming Saturday (9:00 AM - 4:00 PM)",
+      "caseNotes": "Annual College & Community Volunteer Blood Donation Camp in association with Indian Red Cross.",
+      "patientName": "PSG Tech & Rotary Mega Blood Drive",
+      "condition": "Volunteer Blood Donation Camp",
+      "status": "Matching",
+      "escalationStage": "Nearby Donors",
+      "driveDetails": {
+        "eventName": "PSG Tech & Rotary Campus Mega Blood Drive",
+        "eventDate": "Upcoming Saturday, 9:00 AM",
+        "locationName": "PSG Tech Auditorium, Peelamedu, Coimbatore",
+        "organizerDetails": {
+          "name": "Dr. R. Nandagopal",
+          "contact": "+91 422 257 0170",
+          "organization": "PSG Youth Red Cross & NSS"
+        },
+        "donorResponses": [
+          {
+            "donorId": "donor_01",
+            "donorName": "Karthik Subramanian",
+            "status": "Register",
+            "respondedAt": "2026-09-30T03:43:11.309Z"
+          }
+        ]
+      },
+      "timeline": [
+        {
+          "stage": "Drive Scheduled",
+          "message": "Volunteer blood donation camp scheduled with target 50 units.",
+          "timestamp": "2026-09-29T03:43:11.309Z"
+        }
+      ],
+      "createdAt": "2026-09-29T03:43:11.309Z"
+    },
+    {
+      "_id": "req_sched_001",
+      "category": "SCHEDULED",
+      "hospitalId": "hosp_03",
+      "hospitalName": "Coimbatore Medical College Hospital (CMCH)",
+      "hospitalAddress": "Trichy Rd, Coimbatore",
+      "location": {
+        "lat": 10.9998,
+        "lng": 76.9698
+      },
+      "bloodGroup": "A+",
+      "unitsRequired": 3,
+      "unitsSecured": 1,
+      "priorityLevel": "Urgent",
+      "requiredTime": "Required after 4 days",
+      "caseNotes": "Planned Living-Donor Hepatic Transplant procedure. Advance whole blood and component reserve required.",
+      "patientName": "Mrs. Jayalakshmi (Age 49)",
+      "condition": "Hepatic Liver Transplant Preparation",
+      "status": "Matching",
+      "escalationStage": "Blood Banks",
+      "scheduledDetails": {
+        "procedureType": "Organ Transplant / Major Hepatectomy",
+        "procedureDate": "Required after 4 days (October 3rd)",
+        "advanceReservationEnabled": true,
+        "reservedBloodBankName": "PSG Central Blood Bank",
+        "reminderSent": true
+      },
+      "timeline": [
+        {
+          "stage": "Scheduled Case Created",
+          "message": "Advance reservation requisition placed for scheduled transplant.",
+          "timestamp": "2026-09-29T23:43:11.309Z"
+        }
+      ],
+      "createdAt": "2026-09-29T23:43:11.309Z"
+    }
+  ],
+  "donations": [
+    {
+      "_id": "don_001",
+      "donorId": "donor_01",
+      "donorName": "Karthik Subramanian",
+      "donorBloodGroup": "O+",
+      "hospitalId": "hosp_01",
+      "hospitalName": "PSG Institute of Medical Sciences & Research",
+      "units": 1,
+      "donationDate": "2026-06-27T03:43:11.309Z",
+      "status": "Completed",
+      "certificateIssued": true,
+      "badgeAwarded": "Life Saver"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_001",
+      "recipientId": "donor_01",
+      "recipientRole": "donor",
+      "title": "🤖 90-Day Active Donor Status Verification",
+      "message": "Are you still available as an active blood donor? Please verify your readiness to continue receiving emergency matching alerts.",
+      "type": "activity_reminder",
+      "priority": "Urgent",
+      "metadata": {
+        "daysSinceActive": 90,
+        "reminderType": "90_day_check"
+      },
+      "isRead": false,
+      "createdAt": "2026-09-30T02:43:11.309Z"
+    },
+    {
+      "_id": "notif_002",
+      "recipientId": "donor_01",
+      "recipientRole": "donor",
+      "title": "🚨 CRITICAL: Immediate Blood Request at PSG Hospital",
+      "message": "Trauma OT requires 3 units of O+ blood. Distance: 0.3 km away. Can you donate immediately?",
+      "type": "emergency_request",
+      "priority": "Critical",
+      "metadata": {
+        "requestId": "req_psg_001",
+        "bloodGroup": "O+",
+        "hospitalName": "PSG Hospital"
+      },
+      "isRead": false,
+      "createdAt": "2026-09-30T03:28:11.309Z"
+    }
+  ],
+  "certificates": [
+    {
+      "_id": "cert_001",
+      "certificateNumber": "BL-CERT-2026-9921",
+      "donorId": "donor_01",
+      "donorName": "Karthik Subramanian",
+      "bloodGroup": "O+",
+      "hospitalName": "PSG Institute of Medical Sciences & Research",
+      "units": 1,
+      "donationDate": "2026-06-27T03:43:11.309Z",
+      "issueDate": "2026-06-27T03:43:11.309Z",
+      "verificationHash": "e7b1a2c3d4e5f67890abcdef12345678"
+    }
+  ],
+  "auditlogs": [
+    {
+      "_id": "log_001",
+      "userId": "usr_hosp_01",
+      "userName": "PSG Hospital Trauma Desk",
+      "userRole": "hospital",
+      "action": "EMERGENCY_REQUEST_DISPATCH",
+      "details": "Dispatched emergency alert for O+ blood (3 units). Matched donors notified via encrypted relay.",
+      "ip": "192.168.1.104",
+      "status": "warning",
+      "timestamp": "2026-09-30T03:28:11.309Z"
+    }
+  ]
+}
